@@ -1,0 +1,45 @@
+body{
+    display: flex;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.image{
+    display: flex;
+    flex-direction: column;
+    width: 35%;
+}
+.main{
+    display: flex;
+    flex-direction: column;
+    width: 65%;
+}
+.message{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: rgba(220, 220, 220, 0.089);
+    padding: 8px;
+}
+
+p{
+    font-size: 22px;
+    font-weight: bold;
+}
+
+form{
+    display: flex;
+}
+
+.right, .left{
+    display: flex;
+    flex-direction: column;
+}
+
+img{
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+}
