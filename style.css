@@ -1,3 +1,13 @@
+@font-face {
+    font-family: 'Roboto Mono';
+    src: url(https://fonts.google.com/specimen/Roboto+Mono);
+}
+:root{
+    --weight: bolder;
+    --color:  rgb(249, 250, 251);
+    --button-color: rgb(33, 171, 45)
+}
+
 body{
     display: flex;
     height: 100vh;
@@ -14,28 +24,82 @@ body{
 .main{
     display: flex;
     flex-direction: column;
+    justify-content: space-evenly;
     width: 65%;
+
 }
+
+label{
+    font-size: 12px;
+    font-weight: bold;
+}
+
+input{
+    border: 1px solid #00000069;
+    border-radius: 4px;
+    height: 22px;
+    width: 100%;
+}
+
+input:focus{
+    outline: none;
+    border: 2px solid rgba(0, 106, 255, 0.663);
+    box-shadow: rgb(220, 219, 219) 4px 4px 4px;
+}
+
+input:invalid{
+    outline: none;
+    border: 2px solid rgb(255, 31, 31);
+}
+
+.message, .links, .sign{
+    flex: 1;
+    padding: 16px;
+}
+
 .message{
     display: flex;
     flex-direction: column;
     justify-content: center;
-    background-color: rgba(220, 220, 220, 0.089);
-    padding: 8px;
+    background-color: var(--color);
+}
+
+.links  {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    background-color: var(--color);
+}
+
+a{
+    text-decoration: none;
+    color: var(--button-color);
+}
+
+.create{
+    padding: 10px 22px;
+    background-color: var(--button-color);
+    border: 0;
+    border-radius: 10px;
+    box-shadow: rgb(220, 219, 219) 4px 4px 4px;
+    color: white;
+    font-weight: var(--weight);
 }
 
 p{
     font-size: 22px;
-    font-weight: bold;
+    font-weight: var(--weight);
 }
 
 form{
     display: flex;
+    gap: 62px;
 }
 
 .right, .left{
     display: flex;
     flex-direction: column;
+    gap: 6px;
 }
 
 img{
