@@ -29,7 +29,7 @@
                     <input type="email" id="mail">
 
                     <label for="Password">PASSWORD</label>
-                    <input type="password" id="Password" minlength="6" maxlength="8">   
+                    <input type="password" id="Password" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{6,8}">   
                 </div>
 
                 <div class="right">
@@ -37,10 +37,10 @@
                     <input type="text" id="Lname" minlength="2">
 
                     <label for="Phone">PHONE NUMBER</label>
-                    <input type="text" id="Phone" minlength="10" maxlength="10">
+                    <input type="tel" id="Phone" pattern="[0-9]{3} [0-9]{3}-[0-9]{4}" placeholder="Example: 123 456-7890">
 
                     <label for="cPassword">CONFIRM PASSWORD</label>
-                    <input type="password" id="cPassword" minlength="6" maxlength="8"> 
+                    <input type="password" id="cPassword" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{6,8}"> 
                 </div>
         </form>
         </div>
