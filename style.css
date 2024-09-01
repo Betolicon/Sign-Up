@@ -71,6 +71,10 @@ input:invalid{
     background-color: var(--color);
 }
 
+.sign{
+    box-shadow: 0px 4px 17px -3px rgba(0,0,0,0.4);
+}
+
 a{
     text-decoration: none;
     color: var(--button-color);
@@ -84,6 +88,7 @@ a{
     box-shadow: rgb(220, 219, 219) 4px 4px 4px;
     color: white;
     font-weight: var(--weight);
+    cursor: pointer;
 }
 
 p{
