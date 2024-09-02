@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="Images/icon.png" type="image/x-icon">
     <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
     <title>Sign Up</title>
 </head>
 <body>
@@ -29,7 +30,8 @@
                     <input type="email" id="mail">
 
                     <label for="Password">PASSWORD</label>
-                    <input type="password" id="Password" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{6,8}">   
+                    <input type="password" id="Password" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{6,8}">
+                    <span></span>
                 </div>
 
                 <div class="right">
@@ -45,7 +47,8 @@
         </form>
         </div>
        <div class="links">
-            <button class="create">Create Account</button>
+            <span></span>
+            <button class="create" type="submit">Create Account</button>
             <p>Already have an account? <a href="index.html">Log in</a></p>
        </div>
     </div>
